@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elektrownia BIN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="top-box">
+      <h1>Elektrownia BIN</h1>
+      <p>Włącz odpowiednie lampy, aby uzyskać wylosowaną liczbę.</p>
+      <p>Wartość do zasilenia: <span class="target" id="targetNumber">0</span></p>
+    </div>
+
+    <div class="panel" id="panel"></div>
+
+    <div class="bottom-box">
+      <div class="info-box">
+        <h2>Stan zasilania</h2>
+        <div class="binary" id="binaryText">00000000</div>
+
+        <div class="buttons">
+          <button class="check-btn" id="checkButton">Sprawdź</button>
+          <button class="reset-btn" id="resetButton">Wyłącz korki</button>
+          <button class="new-btn" id="newButton">Losuj liczbę</button>
+        </div>
+
+        <div class="message" id="message"></div>
+      </div>
+
+      <div class="rules-box">
+        <h2>Zasady</h2>
+        <p>Klikaj moduły z lampami. Świecąca lampka oznacza <strong>1</strong>, zgaszona oznacza <strong>0</strong>.</p>
+        <p>Twoim celem jest ustawić taki układ lamp, aby suma ich wartości była równa wylosowanej liczbie.</p>
+        <p>Przycisk <strong>Wyłącz korki</strong> resetuje wszystkie lampy i pozwala zacząć od nowa.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
